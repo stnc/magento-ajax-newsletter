@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Stnc_Ajaxnewsletter>
+			<version>0.1.0</version>
+		</Stnc_Ajaxnewsletter>
+	</modules>
+	
+	<global>
+		<helpers>
+			<ajaxnewsletter>
+				<class>Stnc_Ajaxnewsletter_Helper</class>
+			</ajaxnewsletter>
+		</helpers>
+	</global>
+	
+	<frontend>
+		<routers>
+			<ajaxnewsletter>
+				<use>standard</use>
+	            <args>
+	               <module>Stnc_Ajaxnewsletter</module>
+	               <frontName>mnmajax</frontName>
+	            </args>
+	        </ajaxnewsletter>
+		</routers>
+	</frontend>	
+	
+	<frontend>
+		<layout>
+		  <updates>
+			<ajaxnewsletter>
+			  <file>mnm_ajaxnewsletter.xml</file>
+			</ajaxnewsletter>
+		  </updates>
+		</layout>
+	</frontend>  
+	
+</config>

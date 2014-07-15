@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Stnc_Ajaxnewsletter>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Stnc_Ajaxnewsletter>
+    </modules>
+</config>

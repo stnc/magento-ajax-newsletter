@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<layout>
+	<default>
+	
+	<reference name="head">		
+	<!-- <action method="addItem"><type>js</type><name>jquery/mnm_ajax.js</name></action>-->
+	<action method="addJs"><script>stnc/stnc_ajax.js</script></action> 	
+	<action method="addJs"><script>stnc/jquery.fancybox.pack.js</script></action>
+	<action method="addCss"><script>css/jquery.fancybox.css</script></action>
+	</reference>
+
+		
+
+		   
+			
+    <reference name="before_body_end">
+        <block type="core/template" name="footer1"  template="stnc/newsletter_modal_message.phtml"/>
+    </reference>
+	
+	
+    </default>
+</layout>
