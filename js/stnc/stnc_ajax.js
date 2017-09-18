@@ -20,7 +20,7 @@ jQuery( "#newsletter-validate-detail" ).submit(function( event ) {
 			   var dolu=jQuery("#newsletter").val();
 		if (dolu!=''){
 		jQuery.ajax( {
-			url : '/mnmajax/subscriber/ajaxnew',
+			url : '/newsletterAjax/subscriber/ajaxnew',
 			dataType : 'json',
 			type : 'post',
 			data : str,

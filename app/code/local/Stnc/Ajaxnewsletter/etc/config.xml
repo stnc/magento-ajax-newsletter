@@ -1,39 +1,42 @@
 <?xml version="1.0"?>
 <config>
 	<modules>
-		<Stnc_Ajaxnewsletter>
+		<stnc_ajaxnewsletter>
 			<version>0.1.0</version>
-		</Stnc_Ajaxnewsletter>
+		</stnc_ajaxnewsletter>
 	</modules>
-	
 	<global>
 		<helpers>
-			<ajaxnewsletter>
+			<stnc_ajaxnewsletter>
 				<class>Stnc_Ajaxnewsletter_Helper</class>
-			</ajaxnewsletter>
+			</stnc_ajaxnewsletter>
 		</helpers>
+		<blocks>
+			<stnc_ajaxnewsletter>
+				<class>Stnc_Ajaxnewsletter_Block</class>
+			</stnc_ajaxnewsletter>
+		</blocks>
 	</global>
-	
 	<frontend>
 		<routers>
-			<ajaxnewsletter>
+			<stnc_ajaxnewsletter>
 				<use>standard</use>
-	            <args>
-	               <module>Stnc_Ajaxnewsletter</module>
-	               <frontName>mnmajax</frontName>
-	            </args>
-	        </ajaxnewsletter>
+				<args>
+					<module>Stnc_Ajaxnewsletter</module>
+					<frontName>newsletterAjax</frontName>
+				</args>
+			</stnc_ajaxnewsletter>
 		</routers>
-	</frontend>	
-	
-	<frontend>
+
 		<layout>
-		  <updates>
-			<ajaxnewsletter>
-			  <file>mnm_ajaxnewsletter.xml</file>
-			</ajaxnewsletter>
-		  </updates>
+			<updates>
+				<stnc_ajaxnewsletter>
+					<file>stnc_ajaxnewsletter.xml</file>
+				</stnc_ajaxnewsletter>
+			</updates>
 		</layout>
-	</frontend>  
-	
+
+	</frontend>
+
+
 </config>
